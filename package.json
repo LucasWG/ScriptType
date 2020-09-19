@@ -1,0 +1,42 @@
+{
+	"name": "backend",
+	"version": "1.0.0",
+	"main": "server.js",
+	"scripts": {
+		"start": "node build/server.js",
+		"dev": "tsnd --respawn --transpile-only --no-notify --ignore-watch node_modules src/server.ts",
+		"build": "rm -rf build && tsc",
+		"test": "jest"
+	},
+	"author": "LucasWG94 <LucasWG94@gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"@prisma/client": "2.7.1",
+		"bcrypt": "^5.0.0",
+		"body-parse": "^0.1.0",
+		"class-validator": "^0.12.2",
+		"cors": "^2.8.5",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"helmet": "^4.1.1",
+		"jsonwebtoken": "^8.5.1",
+		"nodemailer": "^6.4.11",
+		"uuid": "^8.3.0"
+	},
+	"devDependencies": {
+		"@prisma/cli": "2.7.1",
+		"@types/bcrypt": "^3.0.0",
+		"@types/cors": "^2.8.7",
+		"@types/express": "^4.17.8",
+		"@types/jsonwebtoken": "^8.5.0",
+		"@types/node": "^14.11.1",
+		"@types/nodemailer": "^6.4.0",
+		"@types/supertest": "^2.0.10",
+		"@types/uuid": "^8.3.0",
+		"jest": "^26.4.2",
+		"supertest": "^4.0.2",
+		"ts-jest": "^26.3.0",
+		"ts-node-dev": "^1.0.0-pre.62",
+		"typescript": "^4.0.3"
+	}
+}
